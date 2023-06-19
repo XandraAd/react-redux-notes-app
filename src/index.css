@@ -1,0 +1,163 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: url('../src/assets/bg1_image.jpg');
+  background-position: center;
+}
+
+
+body.dark-mode {
+	color: rgba(255, 98, 0, 0.94);
+  }
+
+  
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(255, 98, 0, 0.94);
+	border:2px double black;
+	border-radius:2rem;
+	margin-block: 1rem;
+}
+
+.header_text {
+	padding: 1rem 2rem;
+}
+
+
+.dark-mode{
+	background-color: black;
+	color: black;
+}
+
+.dark-mode 
+
+
+.dark-mode .header {
+	color: black;
+}
+
+
+
+/*.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
+
+.container{
+  
+  margin: 0 auto;
+  padding: 15px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.note.new {
+	background-color: #67d7cc;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: ivory;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	background-color: #e1e1e1;
+	margin: 5px;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px;
+}
+
+.save:hover {
+	background-color: chocolate;
+	cursor: pointer;
+}
+
+.btn {
+	border: 1px solid red;
+}
+
+.note {
+	
+	background-color:tan;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note_title {
+	border: 2px solid blanchedalmond;
+	
+}
+
+.note-footer {
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+	
+}
+
+.delete:hover {
+	background-color: red;
+}
+	
+
+
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	height: 30px; /* Adjust the height as needed */
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}
